@@ -1363,112 +1363,132 @@ footer {
     </div>
 
     <!-- Form -->
-    <form action="#" method="post" novalidate>
-      <div class="form-grid">
-        <!-- Name -->
-        <div class="form-group full-width">
-          <label class="form-label" for="name">
-            <span class="en">Full name *</span>
-            <span class="zh">姓名 *</span>
-          </label>
-          <input
-            class="form-input"
-            type="text"
-            id="name"
-            name="name"
+  <form 
+  action="https://docs.google.com/forms/d/e/1FAIpQLSe--9f5wJph52row9Nxwdr0THHVwnC8cJ7BfY6wVVahj8W1fQ/formResponse"
+  method="POST"
+  target="_blank"
+  novalidate
+>
+  <div class="form-grid">
+
+    <!-- Full Name -->
+    <div class="form-group full-width">
+      <label class="form-label" for="name">
+        <span class="en">Full name *</span>
+        <span class="zh">姓名 *</span>
+      </label>
+      <input
+        class="form-input"
+        type="text"
+        id="name"
+        name="entry.559352220"
+        required
+        autocomplete="name"
+      >
+    </div>
+
+    <!-- Email -->
+    <div class="form-group full-width">
+      <label class="form-label" for="email">
+        <span class="en">Email address *</span>
+        <span class="zh">电子邮件 *</span>
+      </label>
+      <input
+        class="form-input"
+        type="email"
+        id="email"
+        name="entry.1097102328"
+        required
+        autocomplete="email"
+      >
+    </div>
+
+    <!-- Attending -->
+    <div class="form-group full-width">
+      <p class="form-label">
+        <span class="en">Will you attend? *</span>
+        <span class="zh">你会参加吗 *</span>
+      </p>
+
+      <div class="radio-group">
+
+        <label class="radio-item">
+          <input 
+            type="radio" 
+            name="entry.1275419724" 
+            value="Yes, I'll be there!" 
             required
-            autocomplete="name"
           >
-        </div>
+          <label class="en">Yes, I'll be there!</label>
+          <label class="zh">是的，我会去！</label>
+        </label>
 
-        <!-- Email -->
-        <div class="form-group full-width">
-          <label class="form-label" for="email">
-            <span class="en">Email address *</span>
-            <span class="zh">电子邮件 *</span>
-          </label>
-          <input
-            class="form-input"
-            type="email"
-            id="email"
-            name="email"
-            required
-            autocomplete="email"
+        <label class="radio-item">
+          <input 
+            type="radio" 
+            name="entry.1275419724" 
+            value="Sorry, can't make it"
           >
-        </div>
+          <label class="en">Unfortunately I can't make it</label>
+          <label class="zh">很遗憾，我去不了。</label>
+        </label>
 
-        <!-- Attending -->
-        <div class="form-group full-width">
-          <p class="form-label">
-            <span class="en">Will you attend? *</span>
-            <span class="zh">你会参加吗 *</span>
-          </p>
-          <div class="radio-group">
-            <label class="radio-item">
-              <input type="radio" name="attending" value="yes" required>
-              <label class="en" for="">Yes, I'll be there!</label>
-              <label class="zh" for="">是的，我会去！</label>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="attending" value="no">
-              <label class="en" for="">Unfortunately I can't make it</label>
-              <label class="zh" for="">很遗憾，我去不了。</label>
-            </label>
-          </div>
-        </div>
-
-        <!-- Song request -->
-        <div class="form-group full-width">
-          <label class="form-label" for="song">
-            <span class="en">Song request for the dance floor? (optional)</span>
-            <span class="zh">有想在舞池上听的歌曲吗（可选）</span>
-          </label>
-          <input
-            class="form-input"
-            type="text"
-            id="song"
-            name="song"
-            placeholder=""
-          >
-        </div>
-
-        <!-- Dietary -->
-        <div class="form-group full-width">
-          <label class="form-label" for="dietary">
-            <span class="en">Dietary requirements / allergies</span>
-            <span class="zh">饮食需求 / 过敏事项</span>
-          </label>
-          <textarea
-            class="form-textarea"
-            id="dietary"
-            name="dietary"
-            rows="3"
-          ></textarea>
-        </div>
-
-        <!-- Message -->
-        <div class="form-group full-width">
-          <label class="form-label" for="message">
-            <span class="en">Message to the couple (optional)</span>
-            <span class="zh">给新人的留言（可选）</span>
-          </label>
-          <textarea
-            class="form-textarea"
-            id="message"
-            name="message"
-            rows="4"
-          ></textarea>
-        </div>
-
-        <!-- Submit -->
-        <div class="form-submit">
-          <button type="submit" class="btn-submit">
-            <span class="en">Submit RSVP</span>
-            <span class="zh">提交出席回复</span>
-          </button>
-        </div>
       </div>
-    </form>
+    </div>
+
+    <!-- Song request -->
+    <div class="form-group full-width">
+      <label class="form-label" for="song">
+        <span class="en">Song request for the dance floor? (optional)</span>
+        <span class="zh">有想在舞池上听的歌曲吗（可选）</span>
+      </label>
+      <input
+        class="form-input"
+        type="text"
+        id="song"
+        name="entry.1751303409"
+      >
+    </div>
+
+    <!-- Dietary -->
+    <div class="form-group full-width">
+      <label class="form-label" for="dietary">
+        <span class="en">Dietary requirements / allergies</span>
+        <span class="zh">饮食需求 / 过敏事项</span>
+      </label>
+      <textarea
+        class="form-textarea"
+        id="dietary"
+        name="entry.1948932213"
+        rows="3"
+      ></textarea>
+    </div>
+
+    <!-- Message -->
+    <div class="form-group full-width">
+      <label class="form-label" for="message">
+        <span class="en">Message to the couple (optional)</span>
+        <span class="zh">给新人的留言（可选）</span>
+      </label>
+      <textarea
+        class="form-textarea"
+        id="message"
+        name="entry.443565211"
+        rows="4"
+      ></textarea>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-submit">
+      <button type="submit" class="btn-submit">
+        <span class="en">Submit RSVP</span>
+        <span class="zh">提交出席回复</span>
+      </button>
+    </div>
+
+  </div>
+</form>
+
   </div>
 </section>
 
