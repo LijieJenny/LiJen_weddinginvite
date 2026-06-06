@@ -1387,30 +1387,19 @@ footer {
       >
     </div>
 
-    <!-- Email -->
     <div class="form-group full-width">
-      <label class="form-label" for="email">
-        <span class="en">Email address *</span>
-        <span class="zh">电子邮件 *</span>
+      <label class="form-label" for="name">
+        <span class="en">Will you be attending?</span>
+        <span class="zh">姓名 *</span>
       </label>
-      <input
-        class="form-input"
-        type="email"
-        id="email"
-        name="entry.1097102328"
-        required
-        autocomplete="email"
-      >
+      
     </div>
 
-<!-- Attending -->
-<div class="form-group full-width">
-  <p class="form-label">
-    <span class="en">Will you be attending the wedding ceremony? *</span>
-    <span class="zh">你会参加吗 *</span>
-  </p>
+<div class="two-column-wrapper">
 
-  <div class="radio-group">
+  <!-- LEFT COPY -->
+  <div class="column">
+    <p class="form-label">Wedding ceremony? *</p>
 
     <label class="radio-item">
       <input 
@@ -1419,46 +1408,92 @@ footer {
         value="Yes, I'll be there!" 
         required
       >
-      <label class="en">Yes, I'll be there!</label>
-      <label class="zh">是的，我会去！</label>
+      Yes, I'll be there!
     </label>
 
-    <label class="radio-item">
-      <input 
-        type="radio" 
-        name="entry.877086558" 
-        value="Yes, I'll be there!" 
-        required
-      >
-      <label class="en">Yes, but only at wedding ceremony.</label>
-      <label class="zh">是的，我会去！</label>
-    </label>
-
-         <label class="radio-item">
-      <input 
-        type="radio" 
-        name="entry.877086558" 
-        value="Yes, I'll be there!" 
-        required
-      >
-      <label class="en">Yes, but only at the wedding dinner.</label>
-      <label class="zh">是的，我会去！</label>
-    </label>
-     
     <label class="radio-item">
       <input 
         type="radio" 
         name="entry.877086558" 
         value="Unfortunately I can't make it"
       >
-      <label class="en">Unfortunately I can't make it</label>
-      <label class="zh">很遗憾，我去不了。</label>
+      Unfortunately I can't make it
     </label>
 
-  <!-- REQUIRED FOR RADIO GROUPS -->
-  <input type="hidden" name="entry.877086558_sentinel" value="">
+    <input type="hidden" name="entry.877086558_sentinel" value="">
+  </div>
+
+  <!-- RIGHT COPY -->
+  <div class="column">
+    <p class="form-label">Wedding dinner? *</p>
+
+    <label class="radio-item">
+      <input 
+        type="radio" 
+        name="entry.877086558_copy" 
+        value="Yes, I'll be there!"
+        required
+      >
+      Yes, I will be there!
+    </label>
+
+    <label class="radio-item">
+      <input 
+        type="radio" 
+        name="entry.877086558_copy" 
+        value="Unfortunately I can't make it"
+      >
+      Unfortunately I can't make it
+    </label>
+
+    <input type="hidden" name="entry.877086558_copy_sentinel" value="">
+  </div>
+
 </div>
-</div>
+
+<style>
+ .center-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .two-column-wrapper {
+    width: 600px !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 40px !important;
+    position: relative !important;
+  }
+
+.two-column-wrapper::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #ddd;
+}
+  /* THIS controls left alignment */
+  .column {
+    padding: 5px 20px !important;
+    text-align: left !important;   /* ← forces left alignment */
+  }
+.column {
+  padding: 10px 20px;
+  width: 260px; /* optional: force equal width */
+}
+  .radio-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;   /* change size here */
+    margin-bottom: 10px;
+  }
+
+</style>
+
+
 
     <!-- Song request -->
     <div class="form-group full-width">
