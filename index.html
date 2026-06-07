@@ -353,6 +353,29 @@ nav {
   background: rgba(245, 240, 232, 0.35);
 }
 
+   .form-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.form-message.error {
+  background: #ffefef;
+  color: #a30000;
+  border: 1px solid #d99;
+}
+
+.form-message.success {
+  background: #e9f9ef;
+  color: #0a7a2a;
+  border: 1px solid #9ddeb1;
+}
+
+.error {
+  border-bottom-color: #a30000 !important;
+}
+
 /* ============================================================
    SECTION WRAPPER
    ============================================================ */
@@ -1052,6 +1075,56 @@ footer {
 }
 </style>
 </head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("#rsvp form");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop form from submitting
+
+    let valid = true;
+    let requiredFields = form.querySelectorAll("[data-required]");
+
+    requiredFields.forEach(field => {
+      field.classList.remove("error");
+
+      if (!field.value.trim()) {
+        valid = false;
+        field.classList.add("error");
+      }
+    });
+
+    if (!valid) {
+      showMessage("Please fill in all required fields before submitting.", "error");
+      return;
+    }
+
+    // If everything is valid → show success message
+    showMessage("Thank you! Your RSVP has been submitted.", "success");
+
+    // OPTIONAL: actually submit the form to a backend
+    // form.submit();
+  });
+
+  function showMessage(text, type) {
+    let box = document.querySelector(".form-message");
+
+    if (!box) {
+      box = document.createElement("div");
+      box.className = "form-message";
+      form.prepend(box);
+    }
+
+    box.textContent = text;
+    box.className = "form-message " + type;
+  }
+});
+</script>
+
+   
 <body>
 
 <!-- LANGUAGE TOGGLE INPUT (must be sibling of body content) -->
