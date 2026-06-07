@@ -968,6 +968,31 @@ footer {
   footer { padding: 3rem 1.5rem 2rem; }
   .details-header { padding: 5rem 1.5rem 3rem; }
   .venue-bottom { padding: 2rem 1.5rem 5rem; }
+
+     .two-column-wrapper {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;   /* stack vertically */
+    gap: 25px !important;
+  }
+
+  .two-column-wrapper::after {
+    display: none !important;                /* hide divider */
+  }
+
+  .column {
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;             /* align content left */
+  }
+
+  .radio-item {
+    font-size: 18px !important;              /* slightly smaller for mobile */
+  }
+
+  .radio-item input[type="radio"] {
+    transform: scale(1.2) !important;        /* smaller radio buttons */
+    margin-right: 10px !important;
+  }
 }
 </style>
 </head>
