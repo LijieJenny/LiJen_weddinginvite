@@ -1072,131 +1072,6 @@ footer {
   .radio-item {
     font-size: 16px !important;
   }
-   /* ============================================================
-   OPENING LETTER ANIMATION
-   ============================================================ */
-.envelope-section {
-  display: flex;
-  justify-content: center;
-  padding: 6rem 0;
-  background: var(--ivory-mid);
-}
-
-.envelope-wrapper {
-  perspective: 1200px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.envelope {
-  width: 260px;
-  height: 180px;
-  position: relative;
-  transform-style: preserve-3d;
-}
-
-.envelope-base {
-  position: absolute;
-  inset: 0;
-  background: #ffffff;
-  border-radius: 6px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
-  overflow: hidden;
-}
-
-.envelope-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60%;
-  background: #f0e0c8;
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
-}
-
-.envelope-left,
-.envelope-right {
-  position: absolute;
-  top: 40%;
-  width: 50%;
-  height: 60%;
-  background: #f4e5cf;
-}
-
-.envelope-left {
-  left: 0;
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-}
-
-.envelope-right {
-  right: 0;
-  clip-path: polygon(0 0, 100% 100%, 0 0);
-}
-
-.envelope-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60%;
-  background: #f4e5cf;
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
-  transform-origin: top center;
-  transform: rotateX(0deg);
-  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 3;
-}
-
-.letter {
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 8%;
-  height: 70%;
-  background: #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  padding: 16px 18px;
-  box-sizing: border-box;
-  transform: translateY(40%);
-  opacity: 0;
-  transition:
-    transform 0.8s cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 0.5s ease;
-  z-index: 2;
-}
-
-.letter h3 {
-  font-family: var(--serif);
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--wine);
-}
-
-.letter p {
-  font-size: 0.85rem;
-  color: var(--charcoal-mid);
-  line-height: 1.5;
-}
-
-.hint {
-  margin-top: 18px;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #8a7c6b;
-}
-
-/* Open state */
-.envelope-wrapper.open .envelope-top {
-  transform: rotateX(-150deg);
-}
-
-.envelope-wrapper.open .letter {
-  transform: translateY(-10%);
-  opacity: 1;
-}
-
 }
 </style>
 </head>
@@ -1260,7 +1135,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <span>Li</span> &amp; <span>Jenny</span>
   </div>
 
-   
   <ul class="nav-links">
     <li><a href="#details" class="en">Details</a><a href="#details" class="zh">详情</a></li>
     <li><a href="#schedule" class="en">Program</a><a href="#schedule" class="zh">流程</a></li>
@@ -1304,27 +1178,6 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </section>
 
-<section class="envelope-section">
-  <div class="envelope-wrapper" id="envelope">
-    <div class="envelope">
-      <div class="envelope-base">
-        <div class="envelope-bottom"></div>
-        <div class="envelope-left"></div>
-        <div class="envelope-right"></div>
-        <div class="envelope-top"></div>
-
-        <div class="letter">
-          <h3>Li &amp; Jenny</h3>
-          <p>We are so excited to celebrate this special day with you.</p>
-          <p class="en">Click below to continue</p>
-          <p class="zh">点击继续</p>
-        </div>
-      </div>
-    </div>
-    <div class="hint en">Click to open</div>
-    <div class="hint zh">点击打开</div>
-  </div>
-</section>
 
 
 <!-- ============================================================
@@ -1655,12 +1508,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </p>
       </div>
 
-      <div class="rsvp-image">
-        <img
-          src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?w=600&q=80&fit=crop"
-          alt="Bruiloftsdecoratie / Wedding decoration"
-        >
-      </div>
+
     </div>
 
     <!-- Form -->
@@ -1838,12 +1686,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <span class="zh">© 2026 Li &amp; Jenny · 版权所有，保留所有权利</span>
   </p>
 </footer>
-<script>
-  const env = document.getElementById("envelope");
-  env.addEventListener("click", () => {
-    env.classList.toggle("open");
-  });
-</script>
 
 </body>
 </html>
