@@ -1036,7 +1036,10 @@ footer {
   .dresscode-inner { padding: 5rem 1.5rem; gap: 3rem; }
   .travel-inner { padding: 5rem 1.5rem; }
   .travel-grid { grid-template-columns: 1fr; }
-  .rsvp-inner { padding: 5rem 1.5rem; }
+  .rsvp-inner {
+    padding: 5rem 1.5rem 3%; /* bottom padding now % */
+    gap: 2rem;
+  }
   .form-grid { grid-template-columns: 1fr; }
   .form-group.full-width { grid-column: 1; }
   .form-submit { grid-column: 1; }
@@ -1508,7 +1511,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </p>
       </div>
 
-
     </div>
 
     <!-- Form -->
@@ -1599,9 +1601,6 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 </div>
-
-
-
 
     <!-- Song request -->
     <div class="form-group full-width">
