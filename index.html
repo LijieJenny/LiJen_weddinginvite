@@ -1526,7 +1526,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </div>
 
-    <!-- Form -->
+   <!-- Form -->
   <form 
   action="https://docs.google.com/forms/d/e/1FAIpQLSe--9f5wJph52row9Nxwdr0THHVwnC8cJ7BfY6wVVahj8W1fQ/formResponse"
   method="POST"
@@ -1563,7 +1563,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <!-- LEFT COPY -->
   <div class="column">
-    <p class="form-label">Wedding ceremony? *</p>
+
+      <label class="form-label" for="name">
+        <span class="en">Wedding ceremony? *</span>
+        <span class="zh">婚礼仪式 *</span>
+      </label>
 
     <label class="radio-item">
       <input 
@@ -1572,7 +1576,8 @@ document.addEventListener("DOMContentLoaded", function () {
         value="Yes, I'll be there!" 
         required
       >
-      Yes, I'll be there!
+  <span class="en">Yes, I'll be there!</span>
+  <span class="zh">是的，我会参加</span>
     </label>
 
     <label class="radio-item">
@@ -1581,7 +1586,9 @@ document.addEventListener("DOMContentLoaded", function () {
         name="entry.877086558" 
         value="Unfortunately I can't make it"
       >
-      Unfortunately I can't make it
+      
+  <span class="en">Unfortunately I can't make it</span>
+  <span class="zh">很遗憾，我无法出席</span>
     </label>
 
     <input type="hidden" name="entry.877086558_sentinel" value="">
@@ -1589,8 +1596,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <!-- RIGHT COPY -->
   <div class="column">
-    <p class="form-label">Wedding dinner? *</p>
 
+      <label class="form-label" for="name">
+        <span class="en">Wedding dinner? *</span>
+        <span class="zh">婚宴晚餐 *</span>
+      </label>
     <label class="radio-item">
       <input 
         type="radio" 
@@ -1598,7 +1608,8 @@ document.addEventListener("DOMContentLoaded", function () {
         value="Yes, I'll be there!" 
         required
       >
-      Yes, I'll be there!
+    <span class="en">Yes, I'll be there!</span>
+  <span class="zh">是的，我会参加</span>
     </label>
 
     <label class="radio-item">
@@ -1607,7 +1618,8 @@ document.addEventListener("DOMContentLoaded", function () {
         name="entry.1784089560" 
         value="Unfortunately I can't make it"
       >
-      Unfortunately I can't make it
+  <span class="en">Unfortunately I can't make it</span>
+  <span class="zh">很遗憾，我无法出席</span>
     </label>
 
     <input type="hidden" name="entry.1784089560_sentinel" value="">
