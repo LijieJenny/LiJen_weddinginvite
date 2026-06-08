@@ -1045,11 +1045,11 @@ footer {
   .form-submit { grid-column: 1; }
   .timeline::before { left: 0; }
   .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
-  .timeline-time { text-align: left; padding-right: 0; font-size: 1.5 rem; }
+  .timeline-time { text-align: left; padding-left: 1.5rem; font-size: 1.5 rem; }
   .timeline-dot {
   position: absolute;
-  left: 120px;
-  top: 50%;
+  left: -6px;
+  top: 25%;
   transform: translateY(-50%);
   width: 13px;
   height: 13px;
@@ -1057,12 +1057,12 @@ footer {
   background: var(--wine);
   border: 2px solid var(--gold);
 }
-  .timeline-content { padding-left: 0; }
+  .timeline-content { padding-left: 2; }
   .gallery-grid { grid-template-columns: 1fr 1fr; gap: 3px; }
   .gi-1, .gi-2, .gi-3, .gi-4, .gi-5, .gi-6 { grid-column: auto; grid-row: auto; height: 200px; }
   .venue-card { padding: 2rem 1.5rem; }
   footer { padding: 3rem 1.5rem 2rem; }
-  .details-header { padding: 1.5rem 1.5rem 1rem; }
+  .details-header { padding: 5rem 1.5rem 3rem; }
   .venue-bottom { padding: 2rem 1.5rem 5rem; }
 
 .two-column-wrapper {
@@ -1088,7 +1088,7 @@ footer {
 }
 </style>
 </head>
-
+   
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("#rsvp form");
