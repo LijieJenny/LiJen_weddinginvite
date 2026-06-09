@@ -139,13 +139,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.6;
   color: var(--charcoal-mid);
 }
-.rules-text {
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  font-weight: 300;
-  line-height: 1.85;
-  color: var(--charcoal-mid);
-}
 
 /* ============================================================
    DECORATIVE ELEMENTS
@@ -900,16 +893,17 @@ section {
 }
 .btn-submit:hover { background: var(--charcoal); }
 
+
 /* ============================================================
    RULES
    ============================================================ */
 #rules {
-  background: var(--ivory-mid);
+  background: var(--ivory-mid: #f7f3eb;);
 }
 .rules-inner {
   max-width: 1100px; /* slightly less than RSVP */
   margin: 0 auto;
-  padding: 2rem 5vw;
+  padding: 5rem 5vw 3rem 5vw;
   display: grid;
   gap: 6rem;
   align-items: start;
@@ -938,6 +932,14 @@ margin-bottom: 2rem;
   font-weight: 400;
   font-style: italic;
 }
+.rules-text {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--charcoal-mid);
+}
+
 
 /* ============================================================
    FOOTER
@@ -1748,7 +1750,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <h2 class="rules-lg" style="color:var(--wine); margin-bottom:1rem;">Good to know</h2>
 
       <div class="rules-notes">
-        <h3 class="rules-sm"" style="color:var(--wine); margin-top:1.5rem;">Guestbook</h3>
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">Guestbook</h3>
         <p class="rules-text" >A guestbook will be placed at the entrance of the wedding dinner venue. We’d love for you to sign it and leave us a message.</p>
 
         <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">Photobooth Fun</h3>
