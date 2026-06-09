@@ -896,6 +896,89 @@ section {
 .btn-submit:hover { background: var(--charcoal); }
 
 /* ============================================================
+   RULES
+   ============================================================ */
+#rules {
+  background: var(--ivory-mid);
+}
+.rules-inner {
+  max-width: 1100px; /* slightly less than RSVP */
+  margin: 0 auto;
+  padding: 2rem 5vw;
+  display: grid;
+  gap: 6rem;
+  align-items: start;
+}
+.rules-header {
+  margin-top: -1.5rem; /* pull header upward */
+margin-bottom: 2rem;
+}
+
+.rules-aside {
+  position: sticky;
+  top: 7rem;
+}
+
+.rules-lg {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.rules-sm {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+<!-- ============================================================
+     RULES
+     ============================================================ -->
+
+<section id="rules">
+  <div class="rules-inner">
+  <div class="rules-header">
+
+    <div class="en">
+      <h2 class="rules-lg" style="color:var(--wine); margin-bottom:1rem;">Good to know</h2>
+
+      <div class="rules-notes">
+        <h3 class="rules-sm"" style="color:var(--wine); margin-top:1.5rem;">Guestbook</h3>
+        <p class="rules-text" >A guestbook will be placed at the entrance of the wedding dinner venue. We’d love for you to sign it and leave us a message.</p>
+
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">Photobooth Fun</h3>
+        <p class="rules-text">We’ll have a photobooth during the celebration, please enjoy it and capture some memories with us.</p>
+
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">Dress Etiquette</h3>
+        <p class="rules-text">As part of our wedding customs, we kindly ask guests to avoid wearing white or red. Thank you for helping us honour this tradition.</p>
+      </div>
+    </div>
+
+    <div class="zh">
+      <h2 class="rules-lg" style="color:var(--wine); margin-bottom:1rem;">宾客须知</h2>
+
+      <div class="rules-notes">
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">留言簿</h3>
+        <p class="rules-text">婚宴入口处将放置留言簿，诚挚邀请您写下祝福与留言。</p>
+
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">拍照留念</h3>
+        <p class="rules-text">现场将设有拍照亭，欢迎大家尽情拍照，留下美好回忆。</p>
+
+        <h3 class="rules-sm" style="color:var(--wine); margin-top:1.5rem;">着装礼仪</h3>
+        <p class="rules-text">依照婚礼习俗，敬请宾客避免穿着白色或红色服饰。感谢您与我们一同尊重传统。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+   
+   
+/* ============================================================
    FOOTER
    ============================================================ */
 footer {
